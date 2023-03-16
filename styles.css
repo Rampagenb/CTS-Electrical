@@ -196,7 +196,7 @@ li {
  
 }
 .bg-img2 {
-    background-image: url(/images/bg-img2.jpg);
+    background-image: url(images/bg-img2.jpg);
     min-height:800px;
     max-width: 100%;
     max-height: auto;
