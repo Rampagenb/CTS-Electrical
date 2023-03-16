@@ -78,14 +78,14 @@ li {
     background-size: cover;    
 }
 .bg-img1 {
-    background-image: url(/images/bg-img1.jpg);
+    background-image: url(./images/bg-img1.jpg);
     min-height:1080px;
     max-width: 100%;
     max-height: auto;
 }
 .bg-industrial {
     background-attachment: fixed;
-    background-image: url(/images/bg-industrial.jpg);
+    background-image: url(./images/bg-industrial.jpg);
     background-color: rgba(255,255,255,0.4);
     background-blend-mode: lighten;
     min-height: 800px;
@@ -95,7 +95,7 @@ li {
 }
 .bg-residential {
     background-attachment: fixed;
-    background-image: url(/images/bg-residential.jpg);
+    background-image: url(./images/bg-residential.jpg);
     background-color: rgba(255,255,255,0.25);
     background-blend-mode: lighten;
     min-height: 800px;
@@ -105,7 +105,7 @@ li {
 }
 .bg-commercial {
     background-attachment: fixed;
-    background: url(/images/bg-commercial.jpg);
+    background: url(./images/bg-commercial.jpg);
     background-color: rgba(255,255,255,0.25);
     background-blend-mode: lighten;
     min-height: 800px;
