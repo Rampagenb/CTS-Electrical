@@ -1,0 +1,378 @@
+.header-index {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    height: auto;
+    padding-top: 10px;
+    backdrop-filter: blur(5px);
+}
+.header {
+    display: flex;
+    color: #ad000c;
+    height: auto;
+    padding-top: 10px;
+    flex: 1;
+    backdrop-filter: blur(5px);
+}
+li:hover #logo{    
+    background: rgba(0, 255, 255, 0.5);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: burlywood;
+  }
+
+html, body {
+    overflow-x: hidden;
+}
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lato';
+
+}
+h1, h5 {
+    margin: 0;
+}
+
+.logo, .description, .links {
+    flex: 1;
+    margin-top: 0px;
+}
+.description {
+    text-align: center;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+    padding-left: 50px;
+    margin-left: auto;
+}
+.links {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: right;
+    padding-right: 50px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    float: left;
+    margin: 10px;
+}
+.bg-img1, .bg-img2 {
+    position: relative;
+    opacity: 0.80;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.bg-img1 {
+    background-image: url(/images/bg-img1.jpg);
+    min-height:1080px;
+    max-width: 100%;
+    max-height: auto;
+}
+.bg-industrial {
+    background-attachment: fixed;
+    background-image: url(/images/bg-industrial.jpg);
+    background-color: rgba(255,255,255,0.4);
+    background-blend-mode: lighten;
+    min-height: 800px;
+    max-width: 100%;
+    max-height: auto;
+    background-size: cover;
+}
+.bg-residential {
+    background-attachment: fixed;
+    background-image: url(/images/bg-residential.jpg);
+    background-color: rgba(255,255,255,0.25);
+    background-blend-mode: lighten;
+    min-height: 800px;
+    max-width: 100%;
+    max-height: auto;
+    background-size: cover;
+}
+.bg-commercial {
+    background-attachment: fixed;
+    background: url(/images/bg-commercial.jpg);
+    background-color: rgba(255,255,255,0.25);
+    background-blend-mode: lighten;
+    min-height: 800px;
+    max-width: 100%;
+    max-height: auto;
+    background-size: cover;
+}
+.caption {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.caption-index {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.caption-index {
+    background-color: #111;
+    color: white;
+    font-size: 70px;
+    background-color: rgba(0, 0, 0, 0); 
+    margin: 0;
+}
+.caption-index span.island {
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+}
+.caption span.heading {
+    color: #ad000c;
+    font-size: 50px;
+}
+.contentone, .contenttwo, .contentthree {
+    display: flex;
+    max-width: 100%; 
+    background-color: #fff;
+    align-items: center;
+}
+.contentone {
+    justify-content: center;
+    font-size: 50px;
+    padding: 50px 80px;
+    padding-bottom: 0px;
+}
+.contenttwo {
+    flex: auto;
+    font-style: italic;
+    justify-content: space-evenly;
+    font-size: 30px;
+    padding: 10px;
+}
+.contenttwo div {
+    text-align: center;
+    flex: 1;
+}
+.resheader, .commheader, .indheader {
+    display: flex;
+    border-bottom: 1px solid #111;
+    margin:  0px 100px;
+    justify-content: center;
+}
+.residential, .commercial, .industrial {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+.residentialimages, .commercialimages, .industrialimages {
+    padding-top:30px;
+    display: flex;
+    justify-content: space-between;
+}
+.residentialimages img, .commercialimages img, .industrialimages img {
+    height: 150px;
+    width: 150px;
+    border-radius: 40%;
+    border: none;
+} 
+.contentthree {
+    display: flex;
+    min-height: 150px;
+    justify-content: center;
+ 
+}
+.bg-img2 {
+    background-image: url(/images/bg-img2.jpg);
+    min-height:800px;
+    max-width: 100%;
+    max-height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+#contactus{
+    width: 85%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  #contactus .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #contactus .content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+  }
+  .content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+  }
+  .content .left-side .details{
+    margin: 14px;
+    text-align: center;
+  }
+  .content .left-side .details i{
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 10px;
+  }
+  .content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .content .left-side .details .text-one,
+  .content .left-side .details .text-two{
+    font-size: 14px;
+    color: #afafb6;
+  }
+  #contactus .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+  }
+  .content .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #ad000c;
+  }
+  .right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+  }
+  .right-side .input-box input,
+  .right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+  }
+  .right-side .message-box{
+    min-height: 110px;
+  }
+  .right-side .input-box textarea{
+    padding-top: 6px;
+  }
+  .right-side .button{
+    display: inline-block;
+    margin-top: 12px;
+  }
+  .right-side .button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #ad000c;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button input[type="button"]:hover{
+    background: #5029bc;
+  }
+  
+  @media (max-width: 950px) {
+    #contactus{
+      width: 90%;
+      padding: 30px 40px 40px 35px ;
+    }
+    #contactus .content .right-side{
+     width: 75%;
+     margin-left: 55px;
+    }
+  }
+  @media (max-width: 820px) {
+    #contactus{
+      margin: 40px 0;
+      height: 100%;
+    }
+    #contactus .content{
+      flex-direction: column-reverse;
+    }
+   #contactus .content .left-side{
+     width: 100%;
+     flex-direction: row;
+     margin-top: 40px;
+     justify-content: center;
+     flex-wrap: wrap;
+   }
+   #contactus .content .left-side::before{
+     display: none;
+   }
+   #contactus .content .right-side{
+     width: 100%;
+     margin-left: 0;
+   }
+}
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.mail::before {
+    font: var(--fa-font-solid);
+    content: "\f0e0";
+    color: #ad000c;
+}
+.map::before {
+    font: var(--fa-font-solid);
+    content: "\f3c5";
+    color: #ad000c;
+}
+.phone1::before {
+    font: var(--fa-font-solid);
+    content: "\f095";
+    color: #ad000c;
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    top: 20px; /* Place the button at the bottom of the page */
+    right: 50%; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #ad000c; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding:15px 40px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
