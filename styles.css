@@ -17,29 +17,45 @@
 .header a:hover {
   color: #fff;
 }
-li:hover #logo{    
-  background: #ad000c(0, 255, 255, 0.5);
+.header .description a:hover {
+  border-radius: 10%;
+  box-shadow: inset 200px 0 0 0 #ad000c;
+  color: #fff;
+}
+.header .links a:hover {
+  border-radius: 10%;
+  box-shadow: inset 200px 0 0 0 #ad000c;
+  color: #fff;
 }
 
-a {
+.header-index a {
   color: inherit;
   border-radius: 10%;
   text-decoration: none;
-  box-shadow: inset 0 0 0 0 #fff;
+  box-shadow: inset 0 0 0 0 #efefef;
   color: #fff  ;
   margin: 0 -.25rem;
   padding: 0 .25rem;
   transition: color .5s ease-in-out, box-shadow .3s ease-in-out;
 }
-
+.header a {
+  color: inherit;
+  border-radius: 10%;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #ad000c;
+  color: #ad000c  ;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .5s ease-in-out, box-shadow .3s ease-in-out;
+}
 .header-index .description a:hover {
   border-radius: 10%;
-  box-shadow: inset 200px 0 0 0 #fff;
+  box-shadow: inset 200px 0 0 0 #efefef;
   color: #ad000c;
 }
 .header-index .links a:hover {
   border-radius: 10%;
-  box-shadow: inset 200px 0 0 0 #fff;
+  box-shadow: inset 200px 0 0 0 #efefef;
   color: #ad000c;
 }
 
@@ -54,6 +70,7 @@ body {
 }
 h1, h5 {
   margin: 0;
+  padding: 0;
 }
 
 .logo, .description, .links {
@@ -109,7 +126,7 @@ li {
   background-attachment: fixed;
   background-color: rgba(255,255,255,0.4);
   background-blend-mode: lighten;
-  min-height: 800px;
+  min-height: 920px;
   max-width: 100%;
   max-height: auto;
   background-size: cover;
@@ -119,7 +136,7 @@ li {
   background-image: url(images/bg-residential.jpg);
   background-color: rgba(255,255,255,0.25);
   background-blend-mode: lighten;
-  min-height: 800px;
+  min-height: 920px;
   max-width: 100%;
   max-height: auto;
   background-size: cover;
@@ -129,7 +146,7 @@ li {
   background-image: url(images/bg-commercial.jpg);
   background-color: rgba(255,255,255,0.25);
   background-blend-mode: lighten;
-  min-height: 800px;
+  min-height: 920px;
   max-width: 100%;
   max-height: auto;
   background-size: cover;
@@ -180,7 +197,6 @@ li {
 }
 .contenttwo {
   display: flex;
-  font-style: italic;
   font-size: 30px;
   padding-top: 10px;
   padding-bottom: 50px;
@@ -190,16 +206,22 @@ li {
   justify-content: space-between;
   flex: 1;
 }
+.contenttwo img:hover {
+  filter: opacity(0.25);
+} 
 .resheader, .commheader, .indheader {
   max-width: 240px;
   border-bottom: 1px solid #111;
   margin:  0px 100px;
   justify-content: center;
+  font-weight: 600;
+  font-style: italic;
 }
 .residential, .commercial, .industrial {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0px 30px;
    
 }
 .residentialimages, .commercialimages, .industrialimages {
@@ -213,8 +235,10 @@ li {
   border-radius: 40%;
   border: none;
 } 
+
 .contentthree {
   backdrop-filter: blur(8px);
+  border-radius: 10%;
   background-color: rgb(136, 134, 134, 0.3);
   width: fit-content;
   height: fit-content;
