@@ -22,10 +22,15 @@ document.addEventListener("DOMContentLoaded", function() {
   fields.email = document.getElementById('email');
   fields.phoneNumber = document.getElementById('phoneNumber');
   fields.message = document.getElementById('message');  
+  var error_message = document.getElementById('error_message');
 })
 
 function isNotEmpty(value) {
   if (value == null || typeof value == 'undefined' ) return false;
+  text = "Please fill out all fields";
+  confirmation_message.innerHTML = '';
+  error_message.innerHTML = text;
+
   return (value.length > 0);
 }
 
@@ -37,7 +42,9 @@ function checkNumber(phoneNumber) {
     }
     else
     {
-      alert("Please enter a valid phone number");
+      text = "Please enter valid phone number";
+      confirmation_message.innerHTML = '';
+      error_message.innerHTML = text;
       return false;
     }
 }
@@ -50,11 +57,12 @@ function isEmail(email) {
   
   else
     {
-      alert("Please enter a valid email");
+      text = "Please enter valid Email";
+      confirmation_message.innerHTML = '';
+      error_message.innerHTML = text;
       return false;
     }
 }
-
 
  function fieldValidation(field, validationFunction) {
   if (field == null) return false;
@@ -92,11 +100,10 @@ function isEmail(email) {
 
  function sendContact() {
   if (isValid()) {
+    error_message.innerHTML = '';
     let usr = new User(fullName.value, phoneNumber.value, email.value, message.value);
-
-    alert (`${usr.fullName} thanks for contacting us!`)
-  } else {
-    alert("Please try again")
+    confirmation_message.innerHTML = ('Thanks for sending us a message!'); 
   }
+
   console.log(fullName.value, email.value, phoneNumber.value, message.value);
  }

@@ -97,8 +97,9 @@
         <div class="topic-text">Send us a message</div>
         <p>If you are looking for someone to answer any questions you may have, please send us a message below.</p>
       <form action="#">
-        <div id = "error-message">
-          
+        <div id = "error_message">
+        </div>
+        <div id = "confirmation_message">
         </div>
         <div class="input-box">
           <input type="text" placeholder="Enter your name" id="fullName" />
@@ -112,7 +113,7 @@
           </div>
         </div>
         <div class="input-box message-box">
-            <input type="text" placeholder="Enter your message" id="message">
+            <textarea type="text" placeholder="What can we help you with?" id="message"></textarea>
         </div>
         <div class="button">
           <input type="button" value="Send Now" onclick="sendContact()">

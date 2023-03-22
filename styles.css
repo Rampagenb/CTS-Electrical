@@ -329,6 +329,7 @@ li {
   border-radius: 6px;
   padding: 0 15px;
   resize: none;
+  font: inherit;
 }
 
 .right-side .message-box{
@@ -397,19 +398,26 @@ li {
   }
 }
 
-.errors {
-  display: block;
-  color: red;
-  margin-top: 5px;
+#error_message{
+  margin-bottom: 20px;
+  color: #fff;
+  background: #ad000c;
+  padding: 0px;
+  text-align: left;
+  font-size: 20px;
+  transition: all 0.5s ease;
 }
-.error {
-  -webkit-transition: .2s;
-  -moz-transition: .2s;
-  -ms-transition: .2s;
-  -o-transition: .2s;
-  transition: .2s;
-  box-shadow: 0 0 15px 0 rgba(255,36,0,1);
+
+#confirmation_message{
+  margin-bottom: 20px;
+  color: #fff;
+  background: #03b358;
+  padding: 0px;
+  text-align: left;
+  font-size: 20px;
+  transition: all 0.5s ease;
 }
+
 .icon::before {
   display: inline-block;
   text-rendering: auto;
