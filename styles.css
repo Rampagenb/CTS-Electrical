@@ -166,10 +166,8 @@ li {
   text-align: center;
 }
 .caption-index {
-  background-color: #111;
   color: white;
-  font-size: 70px;
-  background-color: rgba(0, 0, 0, 0); 
+  font-size: 60px;
   margin: 0;
 }
 .caption-index span.island {
@@ -191,13 +189,13 @@ li {
   background-size: cover;
   justify-content: center;
   flex-direction: column;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Montserrat";
   font-size: 50px;
   padding-bottom: 0px;
 }
 .contenttwo {
   display: flex;
-  font-size: 30px;
+  font-size: 25px;
   padding-top: 10px;
   padding-bottom: 50px;
 }
@@ -210,8 +208,7 @@ li {
   filter: opacity(0.25);
 } 
 .resheader, .commheader, .indheader {
-  max-width: 240px;
-  border-bottom: 1px solid #111;
+  max-width: 190px;
   margin:  0px 100px;
   justify-content: center;
   font-weight: 600;
@@ -239,7 +236,7 @@ li {
 .contentthree {
   backdrop-filter: blur(8px);
   border-radius: 10%;
-  background-color: rgb(136, 134, 134, 0.3);
+  background-color: rgba(52, 51, 51, 0.6);
   width: fit-content;
   height: fit-content;
   color: white; 
@@ -247,6 +244,7 @@ li {
   font-size: 30px;
   text-align: center;
   margin: 10% 10%;
+  padding: 0px 10px;
 }
 .bg-img2 {
   background-image: url(images/bg-img2.jpg);
@@ -332,6 +330,7 @@ li {
   padding: 0 15px;
   resize: none;
 }
+
 .right-side .message-box{
   min-height: 110px;
 }
@@ -352,6 +351,13 @@ li {
   background: #ad000c;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+.contactDetails {
+  display: flex;
+  justify-content: space-between;
+}
+.contactDetails .input-box {
+  max-width: 45%;
 }
 .button input[type="button"]:hover{
   background: #5029bc;
@@ -389,6 +395,20 @@ li {
     width: 100%;
     margin-left: 0;
   }
+}
+
+.errors {
+  display: block;
+  color: red;
+  margin-top: 5px;
+}
+.error {
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  box-shadow: 0 0 15px 0 rgba(255,36,0,1);
 }
 .icon::before {
   display: inline-block;
