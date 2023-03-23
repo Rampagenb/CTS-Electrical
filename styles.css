@@ -10,7 +10,14 @@
   .caption-index h1 p{
     font-size: 0.8em;
   }
-
+ .caption {
+  
+ }
+}
+@media only screen and (max-device-width : 480px) {
+    .bg-img1, .bg-img2, .bg-industrial, .bg-commercial, .bg-residential {
+        background-attachment: scroll;
+    }
 }
 @media (max-width: 1000px) {
 .header-index .logo img {
@@ -50,8 +57,8 @@
 }
 .caption h2 {
   font-size: 1em;
-  padding-top: 150px;
-  padding-bottom: 20px;
+  position: absolute;
+  top: 40%;
 }
 .contentone {
   display: flex;
@@ -217,7 +224,7 @@ li {
 }
 .caption {
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 0;
   width: 100%;
   text-align: center;
