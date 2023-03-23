@@ -175,14 +175,12 @@ li {
 .bg-img1, .bg-img2 {
   position: relative;
   opacity: 0.80;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;    
 }
 .bg-img1 {
   background-image: url(images/bg-img1.jpg);
-  background-attachment: fixed;
   background-color: rgba(255,255,255,0.2);
   background-blend-mode: lighten;
   min-height: 920px;
@@ -192,7 +190,6 @@ li {
 }
 .bg-industrial {
   background-image: url(images/bg-industrial.jpg);
-  background-attachment: fixed;
   background-color: rgba(255,255,255,0.4);
   background-blend-mode: lighten;
   min-height: 920px;
@@ -201,7 +198,6 @@ li {
   background-size: cover;
 }
 .bg-residential {
-  background-attachment: fixed;
   background-image: url(images/bg-residential.jpg);
   background-color: rgba(255,255,255,0.25);
   background-blend-mode: lighten;
@@ -211,7 +207,6 @@ li {
   background-size: cover;
 }
 .bg-commercial {
-  background-attachment: fixed;
   background-image: url(images/bg-commercial.jpg);
   background-color: rgba(255,255,255,0.25);
   background-blend-mode: lighten;
