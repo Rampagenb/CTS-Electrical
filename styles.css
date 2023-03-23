@@ -103,7 +103,7 @@
   transition: color .5s ease-in-out, box-shadow .3s ease-in-out;
 }
 .caption-index p {
-  margin: 0px;
+  margin: 0px 10px 0px 0px;
   padding: 0px;
 }
 .header a {
