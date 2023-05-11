@@ -1,82 +1,17 @@
-.header-index {
+.header, .header-index {
   display: flex;
+  flex: 1 1 0px;
   justify-content: space-between;
   color: white;
-  height: auto;
+  height: 10%;
+  width: 100%;
   padding-top: 10px;
   backdrop-filter: blur(5px);
 }
-@media (max-width: 450px){
-  .caption-index h1 p{
-    font-size: 0.8em;
-  }
- .caption {
-  
- }
-}
-@media only screen and (max-device-width : 480px) {
-    .bg-img1, .bg-img2, .bg-industrial, .bg-commercial, .bg-residential {
-        background-attachment: scroll;
-    }
-}
-@media (max-width: 1000px) {
-.header-index .logo img {
-  margin-left: 0;
-  padding: 0;
-  scale: 90%;
-}
-.header .logo img {
-  margin-left: 0;
-  padding: 0;
-  scale: 90%;
-}
-.header-index {
-  display: flex;
-  flex: auto;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-}
 .header {
   display: flex;
-  flex: auto;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
 }
-.header-index .links {
-  margin: 0px;
 
-}.header .links {
-  margin: 0px;
-}
-.caption-index h1 {
-  font-size: 1.5em;
-  padding-top: 75px;
-  padding-bottom: 20px;
-}
-.caption h2 {
-  font-size: 1em;
-  position: absolute;
-  top: 40%;
-}
-.contentone {
-  display: flex;
-  flex-direction: column;
-  flex: auto;
-  text-align: center;
-}
-.contenttwo {
-  display: flex;
-  flex-direction: column;
-}
-.residential, .commercial, .industrial {
-  padding-bottom: 50px;
-}
-.right-side {
-  max-width: 100%;
-}
-}
 .header {
   display: flex;
   color: #ad000c;
@@ -150,12 +85,16 @@ h1, h5 {
 }
 
 .logo, .services, .links {
-  size: content;
   flex: 1;
   margin-top: 0px;
 }
 .services {
   text-align: center;
+  left: 50%;
+}
+.links {
+  display: flex;
+  justify-content: right;
 }
 
 .logo img {
@@ -165,10 +104,6 @@ h1, h5 {
   margin-left: auto;
 }
 .links {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: right;
   margin-right: 50px;
 }
 ul {
@@ -188,6 +123,7 @@ li {
   background-size: cover;    
 }
 .bg-img1 {
+  display: flex;
   background-attachment: fixed;
   background-image: url(images/bg-img1.jpg);
   background-color: rgba(255,255,255,0.2);
@@ -260,7 +196,7 @@ li {
   align-items: center;
 }
 .contentone {
-  background: url(images/bg-abstract.jpg) no-repeat;
+  background: #f5f5f5;
   background-size: cover;
   justify-content: center;
   flex-direction: column;
@@ -403,7 +339,7 @@ li {
   border: none;
   outline: none;
   font-size: 1em;
-  background: #F0F1F8;
+  background: #F5f5f5;
   border-radius: 6px;
   padding: 0 15px;
   resize: none;
@@ -486,7 +422,88 @@ li {
   max-width: 100%;
 }
 }
+@media (max-width: 450px){
+  .caption-index h1 p{
+    font-size: 0.8em;
+  }
+.caption {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+}
+@media only screen and (max-device-width : 480px) {
+    .bg-img1, .bg-img2, .bg-industrial, .bg-commercial, .bg-residential {
+        background-attachment: fixed;
+    }
+}
+@media (max-width: 1000px) {
+.header-index .logo img {
+  margin-left: 0;
+  padding: 0;
+  scale: 90%;
+}
+.header .logo img {
+  margin-left: 0;
+  padding: 0;
+  scale: 90%;
+}
+.header-index {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+.header {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+.header-index .links {
+  margin: 0px;
 
+}.header .links {
+  margin: 0px;
+}
+.caption-index h1 {
+  font-size: 1.5em;
+  padding-top: 75px;
+  padding-bottom: 20px;
+}
+.caption h2 {
+  font-size: 1em;
+  position: absolute;
+  top: 40%;
+}
+.contentone {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  text-align: center;
+}
+.contenttwo {
+  display: flex;
+  flex-direction: column;
+}
+.residential, .commercial, .industrial {
+  padding-bottom: 50px;
+}
+.right-side {
+  max-width: 100%;
+}
+.caption {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+}
 #error_message{
   margin-bottom: 20px;
   color: #fff;
